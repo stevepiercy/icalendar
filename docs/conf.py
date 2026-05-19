@@ -61,7 +61,7 @@ if not version_match or version_match.isdigit() or version_match == "latest":
     else:
         version_match = f"v{release}"
 elif version_match == "stable":
-    version_match = f"v{release}"
+    version_match = "7.x"
 
 print(f"===== version_match: {version_match}")
 print(f"===== release: {release}")
