@@ -47,7 +47,7 @@ json_url = "https://icalendar-stevepiercy.readthedocs.io/en/latest/_static/versi
 version_match = os.environ.get("READTHEDOCS_VERSION")
 print(f"===== version_match: {version_match}")
 release = icalendar.__version__
-release = "v7.1.3"
+release = "7.1.3"
 
 # If READTHEDOCS_VERSION doesn't exist, we're not on RTD
 # If it's an integer, we're in a PR build and the version isn't correct.
