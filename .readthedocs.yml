@@ -19,6 +19,8 @@ build:
     #
     # If there are no changes (git diff exits with 0) we force the command to return with 183.
     # This is a special exit code on Read the Docs that will cancel the build immediately.
+    - git fetch --unshallow || true
+    - git fetch --tags --force || true
     - |
       if [ "$READTHEDOCS_VERSION_TYPE" = "external" ] && git diff --quiet origin/main -- . docs/ \
         src/icalendar/**/*.py \
@@ -35,6 +37,4 @@ build:
       then
         exit 183;
       fi
-    - git fetch --unshallow || true
-    - git fetch --tags --force || true
     - make rtd-pr-preview

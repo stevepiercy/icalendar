@@ -45,6 +45,7 @@ json_url = "https://icalendar-stevepiercy.readthedocs.io/en/latest/_static/versi
 
 # Define the version we use for matching in the version switcher.
 version_match = os.environ.get("READTHEDOCS_VERSION")
+print(f"===== version_match: {version_match}")
 release = icalendar.__version__
 
 # If READTHEDOCS_VERSION doesn't exist, we're not on RTD
@@ -61,7 +62,6 @@ if not version_match or version_match.isdigit() or version_match == "latest":
 elif version_match == "stable":
     version_match = f"v{release}"
 
-print(f"===== version_match: {version_match}")
 print(f"===== release: {release}")
 
 exclude_patterns = [
