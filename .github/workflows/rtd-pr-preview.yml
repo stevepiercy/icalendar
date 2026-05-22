@@ -22,5 +22,5 @@ jobs:
     steps:
       - uses: readthedocs/actions/preview@v1
         with:
-          project-slug: "icalendar"
+          project-slug: "icalendar-stevepiercy"
           single-version: "true"
