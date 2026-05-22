@@ -3,6 +3,7 @@
 Replace `ISSUE_NUMBER` with the issue number that your pull request fixes. Then GitHub will link and automatically close the related issue.
 
 - [ ] Closes #ISSUE_NUMBER
+- [ ] See #ISSUE_NUMBER
 
 ## Description
 
